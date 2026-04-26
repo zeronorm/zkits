@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from unittest import mock
 
-from zkit.utils import ApiResult, cache_with_retry
+from zkits.utils import ApiResult, cache_with_retry
 
 
 class UtilsTests(unittest.TestCase):

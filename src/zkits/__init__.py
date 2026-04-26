@@ -1,7 +1,7 @@
-"""Reusable libraries and command-line tools for zkit."""
+"""Reusable libraries and command-line tools for zkits."""
 
 from .env import check_env
 from .utils import ApiResult, cache_with_retry
 
 __all__ = ["ApiResult", "cache_with_retry", "check_env"]
-__version__ = "0.1.0"
+__version__ = "0.1.1"

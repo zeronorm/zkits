@@ -1,4 +1,4 @@
-"""Command-line interface for zkit."""
+"""Command-line interface for zkits."""
 
 from __future__ import annotations
 
@@ -11,10 +11,10 @@ from .env import check_env
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="zkit",
-        description="Utilities bundled with the zkit Python package.",
+        prog="zkits",
+        description="Utilities bundled with the zkits Python package.",
     )
-    parser.add_argument("--version", action="version", version="zkit 0.1.0")
+    parser.add_argument("--version", action="version", version="zkits 0.1.1")
 
     subparsers = parser.add_subparsers(dest="command", required=True)
 
@@ -44,7 +44,7 @@ def _check_env_command(args: argparse.Namespace) -> int:
         print(json.dumps(info, ensure_ascii=False, indent=2, sort_keys=True))
         return 0
 
-    print("zkit environment")
+    print("zkits environment")
     print(f"python_version: {info['python_version']}")
     print(f"python_executable: {info['python_executable']}")
     print(f"platform: {info['platform']}")

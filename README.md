@@ -1,6 +1,6 @@
-# zkit
+# zkits
 
-`zkit` is a foundational Python toolkit that bundles reusable library code and command-line utilities.
+`zkits` is a foundational Python toolkit that bundles reusable library code and command-line utilities.
 
 ## Install
 
@@ -19,14 +19,14 @@ python -m pip install zkits
 ## Library Usage
 
 ```python
-from zkit import check_env
+from zkits import check_env
 
 info = check_env()
 print(info["python_version"])
 ```
 
 ```python
-from zkit.utils import ApiResult, cache_with_retry
+from zkits.utils import ApiResult, cache_with_retry
 
 @cache_with_retry(cache_dir="quotes", expire=300, max_retries=2)
 def fetch_quote(symbol: str) -> ApiResult:
@@ -39,13 +39,13 @@ print(result.success, result.is_cached)
 ## CLI Usage
 
 ```bash
-zkit check_env
+zkits check_env
 ```
 
 Use JSON output when another tool needs to parse the result:
 
 ```bash
-zkit check_env --json
+zkits check_env --json
 ```
 
 ## Development

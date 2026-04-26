@@ -5,8 +5,8 @@ import json
 import unittest
 from contextlib import redirect_stdout
 
-from zkit import check_env
-from zkit.cli import main
+from zkits import check_env
+from zkits.cli import main
 
 
 class CliTests(unittest.TestCase):

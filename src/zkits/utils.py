@@ -1,4 +1,4 @@
-"""General-purpose utilities for zkit."""
+"""General-purpose utilities for zkits."""
 
 from __future__ import annotations
 
